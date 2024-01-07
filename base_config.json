@@ -1,0 +1,18 @@
+{
+  "api_host_config": {
+    "api_web_protocol": "http",
+    "api_web_host": "127.0.0.1:8000"
+  },
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "api_endpoint": {
+    "create_user": "/create_user",
+    "deposit": "/deposit"
+  },
+  "log_settings": {
+    "log_level": "debug",
+    "log_dir_name": "logs",
+    "file_write_mode": true
+  }
+}

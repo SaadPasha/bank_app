@@ -1,0 +1,6 @@
+
+# Ignore dynaconf secret files
+.secrets.*
+
+/api_tests/api_helpers.py
+/logs

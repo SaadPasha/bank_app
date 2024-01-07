@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+message CreateUserRequest {
+  string f_name = 1;
+  string l_name = 2;
+  string dob = 3;
+  string email = 4;
+  string address = 5;
+  string phone = 6;
+}
+
+message CreateUserResponse {
+  string status = 1;
+  message Details {
+    string message = 1;
+  }
+  Details details = 2;
+  string generated_user_id = 3;
+  double initial_balance = 4;
+}
+
+message DepositRequest{
+  string user_id = 1;
+  double amount = 2;
+  string currency = 3;
+  string deposit_method = 4;
+  string transaction_reference = 5;
+}
+
+message DepositResponse{
+  string status = 1;
+  string message = 2;
+  message Data {
+    string currency = 1;
+    string deposit_method = 2;
+    string transaction_reference = 3;
+    double amount = 4;
+  }
+  Data data = 3;
+}
+
+message GetBalanceRequest {
+  string user_id = 1;
+}
+
+message GetBalanceResponse {
+  string status = 1;
+  string message = 2;
+  message Data {
+    string user_id = 1;
+    double balance = 2;
+    string currency = 3;
+  }
+  Data data = 3;
+}
+
+service BankService {
+  rpc CreateUser(CreateUserRequest) returns (CreateUserResponse);
+  rpc DepositAmount(DepositRequest) returns (DepositResponse);
+  rpc GetBalance(GetBalanceRequest) returns (GetBalanceResponse);
+}

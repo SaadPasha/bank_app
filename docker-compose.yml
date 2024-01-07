@@ -1,0 +1,54 @@
+version: '3'
+
+services:
+#  allure:
+#    image: "frankescobar/allure-docker-service"
+#    environment:
+#      CHECK_RESULTS_EVERY_SECONDS: 1
+#      KEEP_HISTORY: 1
+#    ports:
+#      - "5050:5050"
+#    volumes:
+#      - ${PWD}/allure-results:/app/allure-results
+#      - ${PWD}/allure-reports:/app/default-reports
+#
+#  allure-ui:
+#    image: "frankescobar/allure-docker-service-ui"
+#    environment:
+#      ALLURE_DOCKER_PUBLIC_API_URL: "http://localhost:5050"
+#      ALLURE_DOCKER_PUBLIC_API_URL_PREFIX: ""
+#    ports:
+#      - "5252:5252"
+#
+  api-tests:
+    image: api-tests
+    container_name: api-tests-1
+    build:
+      context: .
+      dockerfile: api_tests/Dockerfile
+#    volumes:
+#      - ${PWD}/allure-results:/api_tests/allure-results
+#      - ${PWD}/allure-reports:/api_tests/default-reports
+#      - ${PWD}/logs:/api_tests/logs
+    depends_on:
+      - grpc-server
+      - fastapi-server
+
+  grpc-server:
+    image: grpc-server
+    container_name: grpc-server-1
+    build:
+      context: .
+      dockerfile: bank_grpc/Dockerfile
+    ports:
+      - "50051:50051"
+      - "50052:50052"
+
+  fastapi-server:
+    image: fastapi-server
+    container_name: fastapi-server-1
+    build:
+      context: .
+      dockerfile: fast_api/Dockerfile
+    ports:
+      - "8000:8000"
