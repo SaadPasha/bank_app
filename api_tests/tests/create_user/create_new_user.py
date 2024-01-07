@@ -1,7 +1,6 @@
 from api_tests import user_api_utils
 import allure
-import sys
-sys.path.append('/')
+
 
 @allure.title("Create new User - Valid Credentials")
 def test_create_new_user(config, user_data, create_user_url, logger):
