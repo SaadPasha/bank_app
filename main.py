@@ -39,9 +39,9 @@ class CreateUserRequest(BaseModel):
     f_name: str = Field(..., min_length=2, max_length=255, pattern="[a-zA-Z]+")
     l_name: str = Field(..., min_length=2, max_length=255, pattern="[a-zA-Z]+")
     dob: str = Field(..., pattern="^\d{4}-\d{2}-\d{2}$")
-    email: EmailStr = Field(..., min_length=8, max_length=255)
+    email: EmailStr = Field(..., min_length=8, max_length=50)
     address: str = Field(..., min_length=8, max_length=255, pattern="[a-zA-Z]+")
-    phone: str
+    phone: str = Field(..., min_length=6, max_length=14, pattern="^[0-9]{6,14}$")
 
     model_config = {
         "json_schema_extra": {

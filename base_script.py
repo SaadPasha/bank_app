@@ -37,7 +37,6 @@ class TestBase:
         # Loading Headers
         self.headers = self.config_data.get('headers')
         self.headers_content_type = self.headers.get('Content-Type')
-        self.headers_auth_token = self.headers.get('Authorization')
 
         # Loading api_tests endpoint
         self.users_endpoint = self.config_data.get('api_endpoint').get('create_user')

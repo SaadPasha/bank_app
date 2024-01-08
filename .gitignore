@@ -8,6 +8,8 @@
 /allure-results
 /api_tests/tests/allure-results
 /api_tests/tests/allure-reports
+/api_tests/tests/create_user/allure-results
+.pytest_cache
 /.pytest_cache
 .idea/sonarlint
 .idea
