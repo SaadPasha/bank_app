@@ -13,3 +13,255 @@
 2024-01-08 02:11:00,491: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
 2024-01-08 02:11:00,507: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
 {'status': 'failed', 'error': {'message': "Invalid parameter value: 'dob'", 'details': "String should match pattern '^\\d{4}-\\d{2}-\\d{2}$'"}}
+2024-01-08 08:48:40,979: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fast_api-server:8000/create_user
+2024-01-08 08:48:48,988: [ERROR] req_setup.py [request_operation:75]: Unknown exception occurred. Please check the logs for the details. 
+ HTTPConnectionPool(host='fast_api-server', port=8000): Max retries exceeded with url: /create_user (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fc51ccb3130>: Failed to resolve 'fast_api-server' ([Errno -3] Temporary failure in name resolution)"))
+2024-01-08 08:48:49,069: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fast_api-server:8000/create_user
+2024-01-08 08:48:57,079: [ERROR] req_setup.py [request_operation:75]: Unknown exception occurred. Please check the logs for the details. 
+ HTTPConnectionPool(host='fast_api-server', port=8000): Max retries exceeded with url: /create_user (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fc51ccb1c60>: Failed to resolve 'fast_api-server' ([Errno -3] Temporary failure in name resolution)"))
+2024-01-08 08:48:57,148: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fast_api-server:8000/create_user
+2024-01-08 08:49:05,156: [ERROR] req_setup.py [request_operation:75]: Unknown exception occurred. Please check the logs for the details. 
+ HTTPConnectionPool(host='fast_api-server', port=8000): Max retries exceeded with url: /create_user (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fc51cd59de0>: Failed to resolve 'fast_api-server' ([Errno -3] Temporary failure in name resolution)"))
+2024-01-08 08:49:05,222: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fast_api-server:8000/create_user
+2024-01-08 09:01:58,570: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:58,661: [INFO] test_create_new_user.py [test_create_new_user:23]: User created successfully with the following creds:
+{'status': 'success', 'details': {'message': 'A new user account has been created successfully'}, 'generated_user_id': '100001', 'initial_balance': 0.0}
+2024-01-08 09:01:58,696: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:58,705: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:01:58,707: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:01:58,754: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:58,763: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:01:58,764: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:01:58,812: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:58,825: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'dob'", 'details': "String should match pattern '^\\d{4}-\\d{2}-\\d{2}$'"}}
+2024-01-08 09:01:58,826: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'dob'", 'details': "String should match pattern '^\\d{4}-\\d{2}-\\d{2}$'"}}
+2024-01-08 09:01:58,867: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:58,882: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'value is not a valid email address: The email address is not valid. It must have exactly one @-sign.'}}
+2024-01-08 09:01:58,884: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'value is not a valid email address: The email address is not valid. It must have exactly one @-sign.'}}
+2024-01-08 09:01:58,952: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:58,961: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'address'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:01:58,962: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'address'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:01:59,009: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,016: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:01:59,018: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:01:59,092: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,106: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'Field required'}}
+2024-01-08 09:01:59,112: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'Field required'}}
+2024-01-08 09:01:59,160: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,173: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'Field required'}}
+2024-01-08 09:01:59,174: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'Field required'}}
+2024-01-08 09:01:59,239: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,250: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'dob'", 'details': 'Field required'}}
+2024-01-08 09:01:59,252: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'dob'", 'details': 'Field required'}}
+2024-01-08 09:01:59,325: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,345: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'Field required'}}
+2024-01-08 09:01:59,347: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'Field required'}}
+2024-01-08 09:01:59,408: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,427: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'address'", 'details': 'Field required'}}
+2024-01-08 09:01:59,428: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'address'", 'details': 'Field required'}}
+2024-01-08 09:01:59,477: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,487: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'Field required'}}
+2024-01-08 09:01:59,488: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'Field required'}}
+2024-01-08 09:01:59,551: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: n with 1 chars
+2024-01-08 09:01:59,553: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,561: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'String should have at least 2 characters'}}
+2024-01-08 09:01:59,562: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'String should have at least 2 characters'}}
+2024-01-08 09:01:59,642: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: xpTZYvgEPCmkTYEprtIJOLRPiotlCjOrpSGYqAuUzoBHCqXpGFZzSjFtlqBrHSDGPFAiIHLKjizkoMEKdetVrIpwbGmPCnqKYcQcAfNXWiuiFKNwbAguhBwzevEozqxUBykGsmUXnOVemddhPCGyxOypPlRbzIxkQZwGItDgtFAvfeOSbCpUIhYAkFwDaoHjiiHEqcnEdojRONaYKwpCOSMUEGuBzZEAHrvIXiYAZlIxHUsZVUtqtktYcmDAJQsK with 256 chars
+2024-01-08 09:01:59,645: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,658: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'String should have at most 255 characters'}}
+2024-01-08 09:01:59,662: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'String should have at most 255 characters'}}
+2024-01-08 09:01:59,725: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: j with 1 chars
+2024-01-08 09:01:59,726: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,736: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'String should have at least 2 characters'}}
+2024-01-08 09:01:59,739: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'String should have at least 2 characters'}}
+2024-01-08 09:01:59,828: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: LxeTeISRgbGYKBHceVbUMXFDoPMeYSwymNoLcCtgCpEgvfKTzJbdpmOLRJHavQwquUuQsrJaiDSpCbelHghWIKECbYcebUPFncMYbDagWdCOkddGZxGxvcSIdCUTyLolVuSTtqkkBDoBkFCOmLxwKtwwwnuayfxTZpyKnfWNOFoYrEszybHJxUqonLOIfgEqAtBSByubgzyVrNMZhIOfcyVEfMcaYxzGcRdjaNXfcVZqowDymQerHHiiNguTYmPR with 256 chars
+2024-01-08 09:01:59,834: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,845: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'String should have at most 255 characters'}}
+2024-01-08 09:01:59,849: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'String should have at most 255 characters'}}
+2024-01-08 09:01:59,928: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: YDfpW with 5 chars
+2024-01-08 09:01:59,930: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:01:59,950: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'String should have at least 6 characters'}}
+2024-01-08 09:01:59,951: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'String should have at least 6 characters'}}
+2024-01-08 09:02:00,036: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: ThFqOmzcovAIaEDUvriBC with 21 chars
+2024-01-08 09:02:00,038: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:02:00,047: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'String should have at most 20 characters'}}
+2024-01-08 09:02:00,048: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'String should have at most 20 characters'}}
+2024-01-08 09:02:00,137: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:02:00,148: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'Value should have at least 8 items after validation, not 6'}}
+2024-01-08 09:02:00,150: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:02:00,162: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'value is not a valid email address: The email address is not valid. It must have exactly one @-sign.'}}
+2024-01-08 09:02:00,228: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:02:00,288: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:02:00,302: [DEBUG] user_api_utils.py [deposit_amount:17]: Deposit amount request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'amount'", 'details': 'Input should be greater than 0'}}
+2024-01-08 09:02:00,304: [INFO] test_deposit_invalid_amount.py [test_amount_invalid_amount:34]: The HTTP response code is 400 with the following details:
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'amount'", 'details': 'Input should be greater than 0'}}
+2024-01-08 09:02:00,305: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:02:00,317: [DEBUG] user_api_utils.py [deposit_amount:17]: Deposit amount request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'amount'", 'details': 'Field required'}}
+2024-01-08 09:02:00,391: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:02:00,403: [DEBUG] user_api_utils.py [deposit_amount:17]: Deposit amount request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'user_id'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:02:00,404: [INFO] test_deposit_invalid_user_id.py [test_deposit_amount_invalid_user_id:31]: The HTTP response code is 400 with the following details:
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'user_id'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:02:00,407: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:02:00,418: [DEBUG] user_api_utils.py [deposit_amount:17]: Deposit amount request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'user_id'", 'details': 'Field required'}}
+2024-01-08 09:02:00,496: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:02:00,548: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:02:00,584: [INFO] test_deposit_succes.py [test_deposit_amount_success:36]: Amount Deposited successfully with the following creds:
+{'status': 'success', 'message': 'Deposit successful', 'data': {'currency': 'EUR', 'deposit_method': 'cash_deposit', 'transaction_reference': 'BANK123456789', 'amount': 1000.0}}
+2024-01-08 09:02:00,655: [DEBUG] req_setup.py [request_operation:70]: Sending the GET request to the URL: http://fastapi-server:8000/get_balance/abc124
+2024-01-08 09:02:00,699: [DEBUG] user_api_utils.py [get_balance:24]: Get Balance request unsuccessful. Response JSON: 
+{'detail': {'status': 'failed', 'error': {'message': 'User not found', 'details': 'The requested user with the provided ID does not exist. Please check the user ID and try again.'}}}
+2024-01-08 09:02:00,700: [INFO] test_get_balance_invalid_user.py [test_deposit_amount_success:28]: The HTTP response code is 404 with the following details:
+{'detail': {'status': 'failed', 'error': {'message': 'User not found', 'details': 'The requested user with the provided ID does not exist. Please check the user ID and try again.'}}}
+2024-01-08 09:02:00,732: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:02:00,772: [DEBUG] req_setup.py [request_operation:70]: Sending the GET request to the URL: http://fastapi-server:8000/get_balance/100004
+2024-01-08 09:02:00,802: [INFO] test_get_balance_success.py [test_retrieve_balance_success:36]: Initial Balance retrieved with response JSON:
+{'status': 'success', 'message': 'User balance retrieved successfully', 'data': {'user_id': '100004', 'balance': 0.0, 'currency': 'EUR'}}
+2024-01-08 09:02:00,805: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:02:00,839: [INFO] test_get_balance_success.py [test_retrieve_balance_success:44]: Amount added successfully with response JSON:
+{'status': 'success', 'message': 'Deposit successful', 'data': {'currency': 'EUR', 'deposit_method': 'cash_deposit', 'transaction_reference': 'BANK123456789', 'amount': 1000.0}}
+2024-01-08 09:02:00,840: [DEBUG] req_setup.py [request_operation:70]: Sending the GET request to the URL: http://fastapi-server:8000/get_balance/100004
+2024-01-08 09:10:10,768: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:10,839: [INFO] test_create_new_user.py [test_create_new_user:23]: User created successfully with the following creds:
+{'status': 'success', 'details': {'message': 'A new user account has been created successfully'}, 'generated_user_id': '100001', 'initial_balance': 0.0}
+2024-01-08 09:10:10,860: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:10,869: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:10:10,870: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:10:10,900: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:10,909: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:10:10,910: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:10:10,940: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:10,946: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'dob'", 'details': "String should match pattern '^\\d{4}-\\d{2}-\\d{2}$'"}}
+2024-01-08 09:10:10,947: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'dob'", 'details': "String should match pattern '^\\d{4}-\\d{2}-\\d{2}$'"}}
+2024-01-08 09:10:10,975: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:10,981: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'value is not a valid email address: The email address is not valid. It must have exactly one @-sign.'}}
+2024-01-08 09:10:10,982: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'value is not a valid email address: The email address is not valid. It must have exactly one @-sign.'}}
+2024-01-08 09:10:11,013: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,020: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'address'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:10:11,020: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'address'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:10:11,052: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,058: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:10:11,059: [INFO] test_create_user_invalid_payload.py [test_create_user_invalid_payload:33]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:10:11,098: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,104: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'Field required'}}
+2024-01-08 09:10:11,105: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'Field required'}}
+2024-01-08 09:10:11,140: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,147: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'Field required'}}
+2024-01-08 09:10:11,148: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'Field required'}}
+2024-01-08 09:10:11,174: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,181: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'dob'", 'details': 'Field required'}}
+2024-01-08 09:10:11,182: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'dob'", 'details': 'Field required'}}
+2024-01-08 09:10:11,229: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,234: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'Field required'}}
+2024-01-08 09:10:11,235: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'Field required'}}
+2024-01-08 09:10:11,261: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,268: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'address'", 'details': 'Field required'}}
+2024-01-08 09:10:11,269: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'address'", 'details': 'Field required'}}
+2024-01-08 09:10:11,306: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,315: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'Field required'}}
+2024-01-08 09:10:11,316: [INFO] test_create_user_missing_fields.py [test_create_user_missing_fields:36]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'Field required'}}
+2024-01-08 09:10:11,348: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: v with 1 chars
+2024-01-08 09:10:11,349: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,355: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'String should have at least 2 characters'}}
+2024-01-08 09:10:11,356: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'String should have at least 2 characters'}}
+2024-01-08 09:10:11,387: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: jNCNyLgDKjhONpfffIriyXiwMhgBFzIIeklPdeVDhNXVCOYedvjJsJIOBUdRMMjkJKLDNiAWHHmQhoKuBigQopdYNZiNWjnBRUZZvOenMMsweNciHzgOEOsZJLYeLtocyWhUfQOKYYKAstTrRZQKAJvbgBIFEoPqZaPsrQzrYEtPnOfrttdHpAZbYmPoJOPCoHxJGfQCbrDzdyxkSTBVgzmcASRcxhSVzLVejNFLulwvVOyGFefRkHimpkcgsYqD with 256 chars
+2024-01-08 09:10:11,388: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,394: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'String should have at most 255 characters'}}
+2024-01-08 09:10:11,395: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'String should have at most 255 characters'}}
+2024-01-08 09:10:11,429: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: D with 1 chars
+2024-01-08 09:10:11,430: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,436: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'String should have at least 2 characters'}}
+2024-01-08 09:10:11,437: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'String should have at least 2 characters'}}
+2024-01-08 09:10:11,469: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: pJysjsiYIYlDMKBnMacNVjhhPoMPJuzhmmMOdgEkgXRbaBHZMxikiRrKvpKsVyWNKERGfGjavkcPxHyunGZmnlDhmpaHdmodvSLTUFTuqBqLcWlXMEPZrdpKUcDUBGOfKFvRPNIavusKHSmeziyAdwCOhnLWxttdlIajQPQBfEEpLCXWJDqVHWQyvXMHCdAzwOxpYpJAWPoqccBpprqaancBHEyregdwLWuxcJAqJFSiGIPfpEucRVcXrZParllP with 256 chars
+2024-01-08 09:10:11,470: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,475: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'String should have at most 255 characters'}}
+2024-01-08 09:10:11,476: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'String should have at most 255 characters'}}
+2024-01-08 09:10:11,508: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: PCfoy with 5 chars
+2024-01-08 09:10:11,509: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,518: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'String should have at least 6 characters'}}
+2024-01-08 09:10:11,520: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'String should have at least 6 characters'}}
+2024-01-08 09:10:11,577: [DEBUG] api_helpers.py [gen_rand_str:68]: Generated random string: fnVzTODNFVOCeZCEHkNsK with 21 chars
+2024-01-08 09:10:11,578: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,597: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'String should have at most 20 characters'}}
+2024-01-08 09:10:11,599: [INFO] test_invalid_boundary_val_check.py [test_create_user_b_val_check:38]: The response is the status code of HTTP 400 with the following JSON body: {'status': 'failed', 'error': {'message': "Invalid parameter value: 'phone'", 'details': 'String should have at most 20 characters'}}
+2024-01-08 09:10:11,659: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,668: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'Value should have at least 8 items after validation, not 6'}}
+2024-01-08 09:10:11,672: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,680: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'email'", 'details': 'value is not a valid email address: The email address is not valid. It must have exactly one @-sign.'}}
+2024-01-08 09:10:11,740: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:11,789: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:10:11,798: [DEBUG] user_api_utils.py [deposit_amount:17]: Deposit amount request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'amount'", 'details': 'Input should be greater than 0'}}
+2024-01-08 09:10:11,799: [INFO] test_deposit_invalid_amount.py [test_amount_invalid_amount:34]: The HTTP response code is 400 with the following details:
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'amount'", 'details': 'Input should be greater than 0'}}
+2024-01-08 09:10:11,800: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:10:11,807: [DEBUG] user_api_utils.py [deposit_amount:17]: Deposit amount request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'amount'", 'details': 'Field required'}}
+2024-01-08 09:10:11,880: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:10:11,890: [DEBUG] user_api_utils.py [deposit_amount:17]: Deposit amount request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'user_id'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:10:11,893: [INFO] test_deposit_invalid_user_id.py [test_deposit_amount_invalid_user_id:31]: The HTTP response code is 400 with the following details:
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'user_id'", 'details': 'Input should be a valid string'}}
+2024-01-08 09:10:11,896: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:10:11,910: [DEBUG] user_api_utils.py [deposit_amount:17]: Deposit amount request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'user_id'", 'details': 'Field required'}}
+2024-01-08 09:10:11,978: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:12,041: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:10:12,085: [INFO] test_deposit_succes.py [test_deposit_amount_success:36]: Amount Deposited successfully with the following creds:
+{'status': 'success', 'message': 'Deposit successful', 'data': {'currency': 'EUR', 'deposit_method': 'cash_deposit', 'transaction_reference': 'BANK123456789', 'amount': 1000.0}}
+2024-01-08 09:10:12,162: [DEBUG] req_setup.py [request_operation:70]: Sending the GET request to the URL: http://fastapi-server:8000/get_balance/abc124
+2024-01-08 09:10:12,200: [DEBUG] user_api_utils.py [get_balance:24]: Get Balance request unsuccessful. Response JSON: 
+{'detail': {'status': 'failed', 'error': {'message': 'User not found', 'details': 'The requested user with the provided ID does not exist. Please check the user ID and try again.'}}}
+2024-01-08 09:10:12,202: [INFO] test_get_balance_invalid_user.py [test_deposit_amount_success:28]: The HTTP response code is 404 with the following details:
+{'detail': {'status': 'failed', 'error': {'message': 'User not found', 'details': 'The requested user with the provided ID does not exist. Please check the user ID and try again.'}}}
+2024-01-08 09:10:12,238: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 09:10:12,287: [DEBUG] req_setup.py [request_operation:70]: Sending the GET request to the URL: http://fastapi-server:8000/get_balance/100004
+2024-01-08 09:10:12,315: [INFO] test_get_balance_success.py [test_retrieve_balance_success:36]: Initial Balance retrieved with response JSON:
+{'status': 'success', 'message': 'User balance retrieved successfully', 'data': {'user_id': '100004', 'balance': 0.0, 'currency': 'EUR'}}
+2024-01-08 09:10:12,316: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/deposit
+2024-01-08 09:10:12,373: [INFO] test_get_balance_success.py [test_retrieve_balance_success:44]: Amount added successfully with response JSON:
+{'status': 'success', 'message': 'Deposit successful', 'data': {'currency': 'EUR', 'deposit_method': 'cash_deposit', 'transaction_reference': 'BANK123456789', 'amount': 1000.0}}
+2024-01-08 09:10:12,374: [DEBUG] req_setup.py [request_operation:70]: Sending the GET request to the URL: http://fastapi-server:8000/get_balance/100004

@@ -6,7 +6,7 @@ import allure
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.description("The test case verifies that in case a missing/invalid user ID is sent in the payload,"
                     " then the system doesn't processes the request and an appropriate error code is generated.")
-def test_deposit_amount_success(config, deposit_data, user_data, create_user_url, deposit_amount_url, logger):
+def test_deposit_amount_invalid_user_id(config, deposit_data, user_data, create_user_url, deposit_amount_url, logger):
     """
     Test Case Function
     Args:

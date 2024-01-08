@@ -1,14 +1,15 @@
 {
   "api_host_config": {
     "api_web_protocol": "http",
-    "api_web_host": "127.0.0.1:8000"
+    "api_web_host": "fastapi-server:8000"
   },
   "headers": {
     "Content-Type": "application/json"
   },
   "api_endpoint": {
     "create_user": "/create_user",
-    "deposit": "/deposit"
+    "deposit": "/deposit",
+    "get_balance": "/get_balance"
   },
   "log_settings": {
     "log_level": "debug",

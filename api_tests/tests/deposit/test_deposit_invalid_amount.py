@@ -6,7 +6,7 @@ import allure
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.description("The test case verifies that in case there's no amount specified in the JSON OR the amount is Zero (0), "
                     "then system generates an appropriate message and the request is not processed.")
-def test_deposit_amount_success(config, deposit_data, user_data, create_user_url, deposit_amount_url, logger):
+def test_amount_invalid_amount(config, deposit_data, user_data, create_user_url, deposit_amount_url, logger):
     """
     Test Case Function
     Args:

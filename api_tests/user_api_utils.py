@@ -13,6 +13,13 @@ def create_new_user(url, data, headers):
 
 def deposit_amount(url, data, headers):
     deposit_amount_resp = req_setup.post_req(url=url, api_data=data, headers=headers)
-    if deposit_amount_resp.status_code !=201:
+    if deposit_amount_resp.status_code != 201:
         LOGGER.debug(f"Deposit amount request unsuccessful. Response JSON: \n{deposit_amount_resp.json()}")
     return deposit_amount_resp
+
+
+def get_balance(url, headers):
+    get_balance_resp = req_setup.get_req(url=url, headers=headers)
+    if get_balance_resp.status_code != 200:
+        LOGGER.debug(f"Get Balance request unsuccessful. Response JSON: \n{get_balance_resp.json()}")
+    return get_balance_resp

@@ -10,7 +10,7 @@ import allure
                     "then a new user is NOT created and the system generates an error message specifying the problem.")
 
 @pytest.mark.parametrize("missing_key", ["f_name", "l_name", "dob", "email", "address", "phone"])
-def test_create_new_user(config, user_data, create_user_url, logger, missing_key):
+def test_create_user_missing_fields(config, user_data, create_user_url, logger, missing_key):
     """
     Test Case Function
     Args:

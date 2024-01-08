@@ -10,8 +10,8 @@ import allure
 @allure.description("The test case verifies that when a POST request is sent to the endpoint: /create_user - with the improper payload, "
                     "then the system generates an error message and the request is not processed.")
 @pytest.mark.parametrize("key, boundary_val", [("f_name", 1), ("f_name", 256), ("l_name", 1), ("l_name", 256),
-                                               ("phone", 5), ("phone", 15), ("email", 3)])
-def test_create_new_user(config, user_data, create_user_url, logger, key, boundary_val):
+                                               ("phone", 5), ("phone", 21), ("email", 3)])
+def test_create_user_b_val_check(config, user_data, create_user_url, logger, key, boundary_val):
     """
     Test Case Function
     Args:

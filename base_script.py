@@ -41,6 +41,7 @@ class TestBase:
         # Loading api_tests endpoint
         self.users_endpoint = self.config_data.get('api_endpoint').get('create_user')
         self.deposit_endpoint = self.config_data.get('api_endpoint').get('deposit')
+        self.balance_endpoint = self.config_data.get('api_endpoint').get('get_balance')
 
         # Custom Logger
         self.log_level = self.config_data.get('log_settings').get('log_level')

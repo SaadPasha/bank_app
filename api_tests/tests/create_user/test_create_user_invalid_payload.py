@@ -10,7 +10,7 @@ import allure
                     " then a new user is NOT created and the system generates an error message specifying the problem.")
 @pytest.mark.parametrize("invalid_key, invalid_value", [("f_name", 123), ("l_name", 123), ("dob", "19-02-1996"),
                                                         ("email", "johndoe.com"), ("address", 1245), ("phone", 12345)])
-def test_create_new_user(config, user_data, create_user_url, logger, invalid_key, invalid_value):
+def test_create_user_invalid_payload(config, user_data, create_user_url, logger, invalid_key, invalid_value):
     """
     Test Case Function
     Args:

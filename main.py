@@ -1,6 +1,7 @@
 import grpc
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.exceptions import RequestValidationError
+from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, EmailStr, Field
 
@@ -10,7 +11,7 @@ from bank_grpc.bank_server import BankService
 app = FastAPI()
 
 # gRPC server address
-grpc_server_address = 'localhost:50052'
+grpc_server_address = 'grpc-server:50052'
 bank_service = BankService()
 
 
@@ -283,6 +284,17 @@ async def get_balance(user_id: str):
         else:
             raise HTTPException(status_code=500, detail=f"gRPC error: {e.details()}")
 
+@app.get("/docs", include_in_schema=False)
+async def custom_swagger_ui_html():
+    return get_swagger_ui_html(openapi_url="/openapi.json", title="API Docs")
+
+@app.get("/redoc", include_in_schema=False)
+async def redoc_html():
+    return get_redoc_html(openapi_url="/openapi.json", title="API Docs", redoc_js_url="/redoc.standalone.js")
+
+@app.get("/openapi.json", include_in_schema=False)
+async def get_open_api_endpoint():
+    return JSONResponse(content=app.openapi())
 
 if __name__ == "__main__":
     import uvicorn
