@@ -1,0 +1,15 @@
+2024-01-08 02:09:04,646: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 02:09:04,713: [INFO] test_create_new_user.py [test_create_new_user:23]: User created successfully with the following creds:
+{'status': 'success', 'details': {'message': 'A new user account has been created successfully'}, 'generated_user_id': '100001', 'initial_balance': 0.0}
+2024-01-08 02:11:00,069: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 02:11:00,184: [INFO] test_create_new_user.py [test_create_new_user:23]: User created successfully with the following creds:
+{'status': 'success', 'details': {'message': 'A new user account has been created successfully'}, 'generated_user_id': '100001', 'initial_balance': 0.0}
+2024-01-08 02:11:00,265: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 02:11:00,274: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'f_name'", 'details': 'Input should be a valid string'}}
+2024-01-08 02:11:00,372: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 02:11:00,392: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'l_name'", 'details': 'Input should be a valid string'}}
+2024-01-08 02:11:00,491: [DEBUG] req_setup.py [request_operation:70]: Sending the POST request to the URL: http://fastapi-server:8000/create_user
+2024-01-08 02:11:00,507: [DEBUG] user_api_utils.py [create_new_user:10]: User creation request unsuccessful. Response JSON: 
+{'status': 'failed', 'error': {'message': "Invalid parameter value: 'dob'", 'details': "String should match pattern '^\\d{4}-\\d{2}-\\d{2}$'"}}

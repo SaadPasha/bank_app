@@ -4,3 +4,10 @@
 
 /api_tests/api_helpers.py
 /logs
+/allure-reports
+/allure-results
+/api_tests/tests/allure-results
+/api_tests/tests/allure-reports
+/.pytest_cache
+.idea/sonarlint
+.idea

@@ -4,7 +4,7 @@ ENV PYTHONPATH=/fast_api
 
 RUN pip install fastapi uvicorn email-validator grpcio==1.46.0 grpcio-tools==1.46.0
 
-COPY fast_api /fast_api
+COPY main.py /fast_api
 
 COPY bank_grpc /fast_api/bank_grpc
 
