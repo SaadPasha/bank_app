@@ -17,8 +17,6 @@ class BankService(bank_pb2_grpc.BankServiceServicer):
 
         for user_data in self.users.values():
             if user_data['email'] == request.email or user_data['phone'] == request.phone:
-                # print(user_data['email'])
-                print(user_data)
                 context.set_details("Duplicate Email or Phone number")
                 return bank_pb2.CreateUserResponse(message="Duplicate Email or Phone number")
 
@@ -55,8 +53,6 @@ class BankService(bank_pb2_grpc.BankServiceServicer):
 
         # Check if the user exists
         if user_id not in self.users:
-            print(type(user_id))
-            print(user_id)
             context.set_details("User not found")
             context.set_code(grpc.StatusCode.NOT_FOUND)
             return bank_pb2.DepositResponse(status="failure", message="User not found")
