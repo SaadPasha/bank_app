@@ -41,7 +41,7 @@ class CreateUserRequest(BaseModel):
     dob: str = Field(..., pattern="^\d{4}-\d{2}-\d{2}$")
     email: EmailStr = Field(..., min_length=8, max_length=50)
     address: str = Field(..., min_length=8, max_length=255, pattern="[a-zA-Z]+")
-    phone: str = Field(..., min_length=6, max_length=14, pattern="^[0-9]{6,14}$")
+    phone: str = Field(..., min_length=6, max_length=20)
 
     model_config = {
         "json_schema_extra": {
@@ -209,7 +209,7 @@ async def deposit_amount(deposit_data: DepositRequest):
                 "amount": grpc_response.data.amount,
             },
         }
-        return deposited_amount
+        return JSONResponse(deposited_amount, status_code=201)
 
     except grpc.RpcError as e:
         # Handle gRPC errors

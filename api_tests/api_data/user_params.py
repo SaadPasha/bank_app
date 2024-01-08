@@ -1,6 +1,6 @@
 from faker import Faker
 
-fake = Faker()
+fake = Faker(locale='de')
 class UserParams(object):
     def __init__(self, f_name=None, l_name=None, dob=None,
                  email=None, address=None, phone=None):
